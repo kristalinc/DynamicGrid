@@ -683,6 +683,9 @@ public class DynamicGridView extends GridView {
         final int deltaYTotal = mHoverCellOriginalBounds.centerY() + mTotalOffsetY + deltaY;
         final int deltaXTotal = mHoverCellOriginalBounds.centerX() + mTotalOffsetX + deltaX;
         mMobileView = getViewForId(mMobileItemId);
+        if (mMobileView == null) {
+            return;
+        }
         View targetView = null;
         float vX = 0;
         float vY = 0;
