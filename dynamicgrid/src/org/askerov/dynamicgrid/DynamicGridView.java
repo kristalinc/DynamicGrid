@@ -663,7 +663,7 @@ public class DynamicGridView extends GridView {
      * @return true if OS version is less than Lollipop, false if not
      */
     public static boolean isPreLollipop() {
-        return Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP;
+        return true; // Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP;
     }
 
     private void touchEventsCancelled() {
